@@ -15,7 +15,6 @@ function Todo() {
           if (!groupedTodo[ele.userId]) groupedTodo[ele.userId] = []
           groupedTodo[ele.userId].push(ele)
         })
-        // console.log(groupedTodo)
         setItems(groupedTodo)
       }).catch(err => console.log(err))
   }, [])

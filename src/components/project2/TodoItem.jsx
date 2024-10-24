@@ -8,7 +8,6 @@ function TodoItem({todo, user}) {
   return (
     <div className='card'>
         <header>{user}</header>
-        
             <ul>
                 {todo.map(ele=><li key={ele.userId} className={ele.completed?'green-todo':'red-todo'}>{ele.todo}</li>)}
             </ul>
